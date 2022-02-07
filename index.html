@@ -1,12 +1,23 @@
 <!doctype html>
 <html>
     <head>
-        <title>Hello JavaScript</title>
-    </head>
+        <meta charset="utf-8">
+        <title>News Summary</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
+        
     <body>
-      <h1>Hello</h1>
-      <p>I'm a simple HTML page that contains no JavaScript for now.</p>
-      <p>Head to <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script#basic_usage">The MDN documentation</a> and add a script tag on this page to load the JS file index.js.</p>
+      <h1>Guardian news lookup</h1>
 
+      <!-- User input -->
+      <p>Enter serarch criteria or retreieve latest news:</p>
+      <input id="repo-name-input" type="text" placeholder="Search term" />
+      <button id="submit-button">Retrieve latest news here</button>
+
+      <!-- News output -->
+      <div class='container'>
+        <ul class="class-list"></ul>
+      </div>
+
+      <script src="bundle.js"></script>
     </body>
 </html>
